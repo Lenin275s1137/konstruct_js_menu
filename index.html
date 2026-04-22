@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>konstruct</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/konstruct.css">
-    <link rel="stylesheet" href="css/medi(konstr).css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script defer src="js/konstruct.js"></script>
+
+
 </head>
 
 <body>
@@ -17,11 +26,45 @@
         <header class="header">
             <div class="header-main">
                 <div class="header-main-top">
+                    <div class="logo__box">
+                        <img src="img/projeco-logo.png" alt="logo"
+                                    class="logo">
+                    </div>
                     <h1 class="header-main-top__heading">PARTNER WITH KONSTUCT</h1>
                     <p class="header-main-top__text">An&nbsp;award-winning construction management firm</p>
                     <p class="header-main-top__floor">SCROLL DOWN</p>
                 </div>
-                <div class="header-main-bottom container">
+
+                <div class="container">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo"><img src="img/company-logo-black.png" alt="logo"
+                                    class="header-logo-link"></a>
+                            <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i
+                                    class="material-icons">menu</i></a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="#" class="header-item-link">HOME</a></li>
+                                <li><a href="#story" class="header-item-link">ABOUT</a></li>
+                                <li><a href="#capabilities" class="header-item-link">SERVICES</a></li>
+                                <li><a href="#" class="header-item-link">WORK</a></li>
+                                <li><a href="#contact" class="header-item-link">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <ul class="sidenav" id="mobile-demo">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#story">ABOUT</a></li>
+                        <li><a href="#capabilities">SERVICES</a></li>
+                        <li><a href="#">WORK</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
+
+
+
+                <!-- <div class="header-main-bottom container">
                     <a href="#">
                         <img src="img/company-logo-black.png" alt="logo" class="header-logo-link">
                     </a>
@@ -57,7 +100,10 @@
                             </a>
                         </ul>
                     </nav>
-                </div>
+                </div> -->
+
+
+
             </div>
         </header>
 
@@ -226,7 +272,7 @@
                     GET IN TOUCH
                 </button>
             </div>
-            <div class="footer-block">
+            <div class="footer-block" id="contact">
                 <div class="container">
                     <div class="footer-top">
                         <h3 class="footer-top__heading">
